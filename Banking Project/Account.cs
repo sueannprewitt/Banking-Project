@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace Banking_Project {
 	class Account {
 		//Properties go here
+		private static int nextAccountNumber = 96434;
+		private const int incrementAccountNumber = 74747;
 		private double Balance = 0;
 		private string Name = "Checking";
 		private int Number = 0;
@@ -54,15 +56,18 @@ namespace Banking_Project {
 		private void SetNumber(int number) {
 
 		}
-
+		//default constructor
 		public Account() {
-
+			Number = nextAccountNumber;
+			nextAccountNumber += incrementAccountNumber;
 		}
 
 		public Account(string name) {
 			Name = name;
+			Number = nextAccountNumber;
+			nextAccountNumber += incrementAccountNumber;
 		}
 
-		}
+	}
 
 }
