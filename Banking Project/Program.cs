@@ -14,7 +14,7 @@ namespace Banking_Project {
 			checking.Deposit(50.00);
 			checking.Deposit(-100.00);
 			Console.WriteLine($"Account {checking.GetName()}, balance is {checking.CheckBalance()}");
-		}
+		} 
 		static void Main(string[] args) {
 			new Program().Run();
 		}

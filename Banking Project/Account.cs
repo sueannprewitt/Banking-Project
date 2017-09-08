@@ -22,7 +22,7 @@ namespace Banking_Project {
 			if (IsAmountInvalid(amount)){ //this is bad
 				Console.WriteLine("Amount must be > zero.");
 				return;
-			}
+			} 
 			Balance += amount;
 		}
 		public void Withdraw(double amount) {
