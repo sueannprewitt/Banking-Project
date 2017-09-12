@@ -7,21 +7,24 @@ using System.Threading.Tasks;
 namespace BankingLibrary {
 	public class Savings : Account {
 
-		public new string Name = "Savings Account";
 		public double IntRate;
 		
 
-		public double PayMonthlyInterest() {
-			return Balance *= IntRate;
-		}
-
-		public double IntDeposit(double amount)
-		{
-			return Balance += amount;
+		public void PayMonthlyInterest() {
+			var InterestAmount = CheckBalance() * IntRate;
+			Deposit(InterestAmount);
 		}
 
 		public override string ToPrint() {
 			return base.ToPrint() + $"::{IntRate}";
 		}
+
+		//constructor (for when Savings is called in the Program.cs)
+		public Savings() : base() { }
+		public Savings(string name) : base(name) { }
+		public Savings(string name, double intRate) : base(name) {
+			IntRate = intRate;
+		}
+
 	}
 }

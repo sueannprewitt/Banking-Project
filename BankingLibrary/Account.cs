@@ -15,9 +15,9 @@ namespace BankingLibrary {
 		/// </summary>
 		private static int nextAccountNumber = 96434;
 		private const int incrementAccountNumber = 74747;
-		public double Balance = 0;
-		public string Name = "Checking";
-		public int Number = 0;
+		private double Balance = 0;
+		private string Name = "Checking";
+		private int Number = 0;
 
 		public virtual string ToPrint() {
 			return $"{Number}: {Name} - {Balance}";
