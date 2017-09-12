@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BankingLibrary;
 
 namespace Banking_Project {
 	class Program {
@@ -31,6 +32,10 @@ namespace Banking_Project {
 			Console.WriteLine($"Account Nbr: {checking.getNumber()}, Name: {checking.GetName()}, balance is {checking.CheckBalance()}");
 			Console.WriteLine($"Account Nbr: {savings.getNumber()}, Name: {savings.GetName()}, balance is {savings.CheckBalance()}");
 
+			Savings sav = new BankingLibrary.Savings();
+			sav.IntRate = 0.05;
+			Console.WriteLine($"Account Nbr: { sav.Number}, Name: { sav.Name}, balance is {sav.Balance}, interest rate is {sav.IntRate}," +
+				$"interest deposit is {sav.Balance}");
 
 		}
 		static void Main(string[] args) {

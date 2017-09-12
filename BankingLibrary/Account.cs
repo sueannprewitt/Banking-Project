@@ -4,20 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Banking_Project {
-	/// <summary>
+namespace BankingLibrary {
+		/// <summary>
 	/// The account class simulates an account at a bank
 	/// </summary>
-	class Account {
+	public class Account {
 		//Properties go here
 		/// <summary>
 		/// Contains the value of the next instance account number
 		/// </summary>
 		private static int nextAccountNumber = 96434;
 		private const int incrementAccountNumber = 74747;
-		private double Balance = 0;
-		private string Name = "Checking";
-		private int Number = 0;
+		public double Balance = 0;
+		public string Name = "Checking";
+		public int Number = 0;
+
+		public virtual string ToPrint() {
+			return $"{Number}: {Name} - {Balance}";
+	}
+
+
+
 		//Methods go here
 
 		/// <summary>
