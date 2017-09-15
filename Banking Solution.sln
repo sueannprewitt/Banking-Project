@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking Project", "Banking Project\Banking Project.csproj", "{2531D39F-199B-414C-8E83-0116B98937D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingLibrary", "BankingLibrary\BankingLibrary.csproj", "{78B0E002-286D-4436-AFBA-AE1FDC3E7C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCasesForBankingSolution", "TestCasesForAccount\TestCasesForBankingSolution.csproj", "{2EA287ED-AC42-4724-8B92-E11BFDA3AD9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{78B0E002-286D-4436-AFBA-AE1FDC3E7C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B0E002-286D-4436-AFBA-AE1FDC3E7C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B0E002-286D-4436-AFBA-AE1FDC3E7C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA287ED-AC42-4724-8B92-E11BFDA3AD9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA287ED-AC42-4724-8B92-E11BFDA3AD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA287ED-AC42-4724-8B92-E11BFDA3AD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA287ED-AC42-4724-8B92-E11BFDA3AD9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
